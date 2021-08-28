@@ -6,7 +6,7 @@ const ContactForm = () => {
     <form className={classes.formContainer}>
         <h1 className={classes.title}>Contact Me</h1>
       <div className={classes.inputContainer}>
-        <Input label="name" type="text"/>
+        <Input label="Name" type="text"/>
         <Input label="E-mail" type="email"/>
       </div>
       <div className={classes.message}>
