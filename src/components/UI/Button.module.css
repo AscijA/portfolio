@@ -1,0 +1,43 @@
+.buttonContainer {
+  font-family: "Poppins";
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+button {
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.blueButton {
+  border: 3px solid white;
+  color: white;
+  background-color: #0096c7;
+}
+
+.whiteButton {
+  border: 3px solid #0096c7;
+  color: #0096c7;
+  background-color: white;
+}
+
+.blueButton:hover {
+  border: 3px solid #0096c7;
+  color: #0096c7;
+  background-color: white;
+}
+
+.whiteButton:hover {
+  border: 3px solid white;
+  color: white;
+  background-color: #0096c7;
+}
+.bigButton{
+  font-size: 1.5rem;
+}

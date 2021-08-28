@@ -1,0 +1,10 @@
+.iconItem {
+  height: 80%;
+  width: 80%;
+  display: flex;
+  align-self: center;
+}
+.iconCont {
+  display: inline-block;
+  margin: 8px;
+}

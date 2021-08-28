@@ -1,0 +1,45 @@
+.title {
+  font-size: 40px;
+  text-align: center;
+  margin-bottom: 50px;
+  margin-top: 5rem;
+}
+.formContainer {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin: 50px 0 100px 0;
+}
+.inputContainer{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+.message {
+  display: inline-flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+}
+label{
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+input{
+  border-radius: 20px;
+  border: 1px solid #0096c7;
+  height: 3rem;
+}
+.messageInput{
+  height: 20rem;
+  margin-bottom: 20px;
+}
+.buttonCont{
+  margin-top: 30px;
+  width: 15rem;
+  height: 4rem;
+}
