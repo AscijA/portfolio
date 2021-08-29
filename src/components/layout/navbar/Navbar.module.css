@@ -1,28 +1,46 @@
-
+div {
+  height: 100%;
+}
 .navbar {
   position: fixed;
   display: flex;
   justify-content: center;
   align-items: center;
   height: 5rem;
-  background-color: #0096c7 ;
+  background-color: #0096c7;
   vertical-align: middle;
   width: 100%;
 }
+
 .navbarInnerContainer {
-  display: flex;
-  justify-content: space-around;
-  vertical-align: middle;
-  width: 100%;
+  display: inline-flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  height: 100%;
 }
+
 .myName {
+  display: inline-flex;
   text-align: center;
   font-size: 2rem;
   font-weight: bold;
   color: #ffffff;
 }
 .myNameContainer {
-  width: 10%;
-  display: inline-block;
-  margin: 0 0 0 3%;
+  width: 20%;
+  display: inline-flex;
+  align-items: center;
+}
+.navbarItems {
+  width: 80%;
+  display: inline-flex;
+}
+@media all and (max-width: 960px) {
+  .navbarInnerContainer {
+    justify-content: space-between;
+  }
+  .navbarItems {
+    visibility: collapse;
+  }
 }

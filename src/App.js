@@ -11,7 +11,7 @@ function App() {
       <Navbar />
       {/* <ContactMe/> */}
       {/* <ErrorPage /> */}
-      <Footer />
+      {/* <Footer /> */}
     </Fragment>
   );
 }
