@@ -3,11 +3,13 @@ import "./assets/fonts.css";
 import Footer from "./components/layout/footer/Footer";
 import { Fragment } from "react";
 import ContactMe from "./pages/ContactMe/ContactMe";
+import ErrorPage from "./pages/ErrorPage/ErrorPage";
 function App() {
   return (
     <Fragment>
       <Navbar />
-      <ContactMe/>
+      {/* <ContactMe/> */}
+      <ErrorPage />
       <Footer />
     </Fragment>
   );
