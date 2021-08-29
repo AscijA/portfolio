@@ -1,5 +1,5 @@
 import classes from "./ContactForm.module.css";
-import Button from "../../components/UI/Button"
+import Button from "../../components/UI/Button/Button"
 import Input from "./Input";
 const ContactForm = () => {
   return (
