@@ -1,7 +1,8 @@
-import Navbar from "./components/layout/navbar/Navbar";
 import "./assets/fonts.css";
-import Footer from "./components/layout/footer/Footer";
 import { Fragment } from "react";
+
+import Navbar from "./components/layout/navbar/Navbar";
+import Footer from "./components/layout/footer/Footer";
 import ContactMe from "./pages/ContactMe/ContactMe";
 import ErrorPage from "./pages/ErrorPage/ErrorPage";
 function App() {
@@ -9,7 +10,7 @@ function App() {
     <Fragment>
       <Navbar />
       {/* <ContactMe/> */}
-      <ErrorPage />
+      {/* <ErrorPage /> */}
       <Footer />
     </Fragment>
   );

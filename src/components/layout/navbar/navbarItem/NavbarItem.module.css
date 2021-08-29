@@ -8,8 +8,7 @@
 .navItem {
   display: inline-block;
   text-align: left;
-  font: normal normal bold 1.2rem/2rem Poppins;
-  letter-spacing: 0px;
+  font-size: 1.2rem;
+  font-weight: bold;
   color: #ffffff;
-  opacity: 1;
 }

@@ -2,3 +2,7 @@
 @import url("http://fonts.cdnfonts.com/css/segoe-ui-4");
 
 
+html, body {
+  margin:0px;
+  font-family: "Poppins";
+}
