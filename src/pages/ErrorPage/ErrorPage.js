@@ -5,8 +5,7 @@ const ErrorPage = () => {
     <section className={classes.sectionContainer}>
       <div className={classes.e404Cont}>
         <h1 className={classes.e404Text}>404</h1>
-        <h1 className={classes.helperText}>Page not found!</h1>
-        <h1 className={classes.helperText}>Whoops!</h1>
+        <h1 className={classes.helperText}>Whoops... Page not found!</h1>
         <p className={classes.message}>
           It seems that you got kinda lost. Let me help you.
           <br />
