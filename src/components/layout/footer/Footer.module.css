@@ -1,3 +1,6 @@
+div{
+  height: auto;
+}
 .outerContainer{
   width: 100%;
   display: flex;

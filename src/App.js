@@ -9,9 +9,9 @@ function App() {
   return (
     <Fragment>
       <Navbar />
-      {/* <ContactMe/> */}
+      <ContactMe/>
       {/* <ErrorPage /> */}
-      {/* <Footer /> */}
+      <Footer />
     </Fragment>
   );
 }

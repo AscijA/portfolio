@@ -43,3 +43,12 @@ input{
   width: 15rem;
   height: 4rem;
 }
+  @media all and (max-width:567px) {
+    .inputContainer{
+      flex-direction: column;
+    }
+    .buttonCont{
+      margin-top: 1rem;
+    }
+    
+  }
