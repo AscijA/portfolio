@@ -3,7 +3,7 @@ import classes from "./ContactMe.module.css";
 
 const ContactMe = () => {
   return(
-    <section className={classes.sectionContainer}>
+    <section>
       <div className={classes.contactFormContainer}>
         <ContactForm/>
       </div>
