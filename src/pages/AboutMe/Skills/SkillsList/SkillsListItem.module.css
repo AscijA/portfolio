@@ -4,12 +4,6 @@
   margin: 0;
   margin-left: 1rem;
 }
-.amount {
-  margin: 0;
-  font-size: 1.5rem;
-  color: #3a3a3a;
-  margin-right: 1rem;
-}
 
 .barContainer {
   height: 2.5rem;
@@ -37,19 +31,4 @@
   .name{
     font-size: 1rem;
   }
-  .amount{
-    visibility: collapse;
-  }
 }
-/* 
-@media all and (max-width: 567px) {
-  .barContainer{
-    height: 1rem;
-  }
-  .name{
-    font-size: 0.75rem;
-  }
-  .amount{
-    visibility: collapse;
-  }
-} */

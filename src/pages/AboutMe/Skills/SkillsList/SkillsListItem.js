@@ -6,7 +6,6 @@ const SkillsListItem = (props) => {
       <div className={classes.progresBar} style={{ width: `${props.amount}%` }}>
         <p className={classes.name}>{props.name}</p>
       </div>
-      <p className={classes.amount}>{props.amount}%</p>
     </div>
   );
 };
