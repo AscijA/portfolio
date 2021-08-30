@@ -1,0 +1,21 @@
+.list{
+  width: 90%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  margin-bottom: 4.5rem;
+}
+
+@media all and (max-width: 920px) {
+  .list{
+    margin-bottom: 3rem;
+  }
+}
+
+@media all and (max-width: 567px) {
+  .list{
+    margin-bottom: 2rem;
+  }
+}

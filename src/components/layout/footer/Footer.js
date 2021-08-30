@@ -8,9 +8,9 @@ import ContactMeBanner from "./ContactMeBanner/ContactMeBanner";
 const Footer = () => {
   return (
     <div className={classes.outerContainer}>
-      {/* <div className={classes.banner}>
+      <div className={classes.banner}>
         <ContactMeBanner />
-      </div> */}
+      </div>
 
       <div className={classes.container}>
         <div className={classes.innerContainer}>

@@ -1,0 +1,55 @@
+.name {
+  font-size: 1.5rem;
+  color: white;
+  margin: 0;
+  margin-left: 1rem;
+}
+.amount {
+  margin: 0;
+  font-size: 1.5rem;
+  color: #3a3a3a;
+  margin-right: 1rem;
+}
+
+.barContainer {
+  height: 2.5rem;
+  width: 100%;
+  border-radius: 15px;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.progresBar {
+  align-items: center;
+  height: 100%;
+  width: 90%;
+  background-color: #3a3a3a;
+  display: flex;
+  border-radius: 15px;
+}
+
+
+@media all and (max-width: 920px) {
+  .barContainer{
+    height: 1.5rem;
+  }
+  .name{
+    font-size: 1rem;
+  }
+  .amount{
+    visibility: collapse;
+  }
+}
+/* 
+@media all and (max-width: 567px) {
+  .barContainer{
+    height: 1rem;
+  }
+  .name{
+    font-size: 0.75rem;
+  }
+  .amount{
+    visibility: collapse;
+  }
+} */
