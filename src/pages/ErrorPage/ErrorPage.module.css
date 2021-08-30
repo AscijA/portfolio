@@ -29,7 +29,7 @@
   margin-bottom: 5rem;
 }
 
-@media all and (max-width: 960px) {
+@media all and (max-width: 1024px) {
   .e404Text{
     font-size: 8rem;
   }
@@ -41,7 +41,7 @@
   }
 }
 
-@media all and (max-width: 567px) {
+@media all and (max-width: 480px) {
    .e404Text{
     font-size: 5rem;
   }

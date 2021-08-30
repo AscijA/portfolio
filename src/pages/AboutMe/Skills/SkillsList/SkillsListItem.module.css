@@ -30,7 +30,7 @@
 }
 
 
-@media all and (max-width: 920px) {
+@media all and (max-width: 1024px) {
   .barContainer{
     height: 1.5rem;
   }

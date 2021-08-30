@@ -36,11 +36,20 @@ div {
   width: 80%;
   display: inline-flex;
 }
-@media all and (max-width: 960px) {
+@media all and (max-width: 1024px) {
   .navbarInnerContainer {
     justify-content: space-between;
   }
   .navbarItems {
     visibility: collapse;
+  }
+  .myName{
+    font-size: 1.75rem;
+  }
+}
+
+@media all and (max-width: 480px) {
+  .myName{
+    font-size: 1.5rem;
   }
 }

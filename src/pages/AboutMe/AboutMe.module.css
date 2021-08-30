@@ -31,7 +31,7 @@
   align-items: flex-start;
 }
 
-@media all and (max-width: 920px)
+@media all and (max-width: 1024px)
 {
   .innerContainer{
     margin-top: 5rem;
@@ -48,7 +48,7 @@
     margin-bottom: 3rem;
   }
 }
-@media all and (max-width:567px) {
+@media all and (max-width:480px) {
   .innerContainer{
     margin-top: 3rem;
   }

@@ -43,7 +43,7 @@ input{
   width: 15rem;
   height: 4rem;
 }
-  @media all and (max-width:567px) {
+  @media all and (max-width:480px) {
     .inputContainer{
       flex-direction: column;
     }

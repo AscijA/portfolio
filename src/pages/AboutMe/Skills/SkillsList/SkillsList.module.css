@@ -8,13 +8,13 @@
   margin-bottom: 4.5rem;
 }
 
-@media all and (max-width: 920px) {
+@media all and (max-width: 1024px) {
   .list{
     margin-bottom: 3rem;
   }
 }
 
-@media all and (max-width: 567px) {
+@media all and (max-width: 480px) {
   .list{
     margin-bottom: 2rem;
   }
