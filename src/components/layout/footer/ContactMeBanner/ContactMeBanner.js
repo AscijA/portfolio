@@ -7,16 +7,16 @@ const ContactMeBanner = () => {
   /* handles weird media query bug. On window resize, when hiding certain element, a weird
   margine appears*/
   const [shouldRender, setShouldRender] = useState(true);
-  useEffect(() => {
-    function handleResize() {
-      if (window.innerWidth < 1024) {
-        setShouldRender(false);
-      } else {
-        setShouldRender(true);
-      }
+  const handleResize = () => {
+    if (window.innerWidth < 1024) {
+      setShouldRender(false);
+    } else {
+      setShouldRender(true);
     }
+  };
+  useEffect(() => {
     window.addEventListener("resize", handleResize);
-  });
+  }, [shouldRender]);
 
   const shittyshit = !shouldRender ? null : (
     <div className={classes.ideaContainer}>
