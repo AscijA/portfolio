@@ -2,7 +2,7 @@
   color: white;
   position: relative;
   width: 100%;
-  height: 5rem;
+  height: 6rem;
   border-radius: 45px;
   background-color: #0096c7;
   display: flex;
@@ -11,32 +11,65 @@
 .innerContainer {
   width: 75%;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-content: center;
   align-items: center;
 }
 .buttonContainer {
   display: inline-flex;
-  justify-items: flex-end;
-  align-self: flex-start;
   width: 9rem;
   height: 3rem;
-  text-align: right;
 }
 .title {
   font-size: 1.5rem;
   font-weight: bold;
-    text-align: left;
-
+  text-align: center;
+  margin: 0;
+  width: 100%;
 }
-
 .ideaText {
   font-size: 1.2rem;
   text-align: center;
   font-weight: 200;
+  margin: 0;
+  height: 100%;
+  align-self: center;
+}
+.titleContainer {
+  display: inline-flex;
+  width: 9rem;
+}
+.ideaContainer {
+  display: inline-flex;
 }
 
-.equalContainer {
-  width: 33.33%;
-  text-align: right;
+@media all and (max-width: 1024px) {
+  .innerContainer{
+    justify-content: space-around;
+  }
+  .titleContainer {
+    width: auto;
+  }
+  .buttonContainer {
+    width: 10rem;
+  }
+}
+@media all and (max-width: 768px) {
+  .titleContainer {
+    visibility: collapse;
+  }
+  .buttonContainer {
+    width: 70%;
+  }
+  .innerContainer {
+    justify-content: center;
+  }
+}
+@media all and (max-width: 480px) {
+  .outerContainer {
+    height: 5rem;
+  }
+  .buttonContainer {
+    width: 100%;
+  }
 }
