@@ -1,10 +1,9 @@
 .hamburgerMenu {
   width: 2.5rem;
   height: 2rem;
-  display: inline-flex;
+  display: none;
   justify-content: space-between;
   flex-direction: column;
-  visibility: collapse;
 }
 
 .line {
@@ -17,6 +16,6 @@
 
 @media all and (max-width: 1024px) {
   .hamburgerMenu {
-    visibility: visible;
+    display: inline-flex;
   }
 }
