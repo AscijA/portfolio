@@ -34,3 +34,14 @@ div{
   font-size: 1rem;
   color: #ffffff;
 }
+@media all and (max-width:768px) {
+  .banner{
+  bottom: -3rem;
+}
+}
+
+@media all and (max-width:480px) {
+  .banner{
+  bottom: -2.5rem;
+}
+}

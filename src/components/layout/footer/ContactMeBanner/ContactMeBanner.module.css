@@ -17,7 +17,7 @@
 }
 .buttonContainer {
   display: inline-flex;
-  width: 9rem;
+  width: 10rem;
   height: 3rem;
 }
 .title {
@@ -37,7 +37,7 @@
 }
 .titleContainer {
   display: inline-flex;
-  width: 9rem;
+  width: 10rem;
 }
 .ideaContainer {
   display: inline-flex;
@@ -66,6 +66,9 @@
   }
   .innerContainer {
     justify-content: center;
+  }
+  .outerContainer {
+    background-color: transparent;
   }
 }
 @media all and (max-width: 480px) {
