@@ -41,3 +41,14 @@ button {
 .bigButton{
   font-size: 1.5rem;
 }
+
+@media all and (max-width: 768px) {
+  
+  .blueButton {
+  border: none;
+}
+
+.whiteButton {
+  border: none;
+}
+}
