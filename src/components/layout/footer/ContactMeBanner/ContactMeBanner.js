@@ -1,4 +1,3 @@
-import { useEffect, useState } from "react";
 
 import classes from "./ContactMeBanner.module.css";
 import Button from "../../../UI/Button/Button";

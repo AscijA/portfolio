@@ -1,0 +1,41 @@
+.sideDrawer {
+  display: none;
+}
+
+@media all and (max-width: 1024px) {
+  .sideDrawer {
+    width: 100%;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+    position: fixed;
+    z-index: 9;
+  }
+
+  .show {
+    display: flex;
+  }
+
+  .hide {
+    display: none;
+  }
+
+  .innerContainer {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding-right: 2.5rem;
+    padding-top: 6rem;
+    background-color: #0096c7;
+    padding-bottom: 3rem;
+  }
+}
+
+@media all and (max-width: 768px) {
+  .innerContainer {
+    width: 100%;
+    padding-right: 0;
+    align-items: center;
+  }
+}

@@ -1,6 +1,11 @@
 div {
   height: 100%;
 }
+.navbarContainer{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
 .navbar {
   position: fixed;
   display: flex;
@@ -10,6 +15,7 @@ div {
   background-color: #0096c7;
   vertical-align: middle;
   width: 100%;
+  z-index: 10;
 }
 
 .navbarInnerContainer {
@@ -20,12 +26,29 @@ div {
   height: 100%;
 }
 
-.myName {
+.navbarHome {
+  background-color: transparent;
+  justify-content: center;
+}
+
+.navbarInnerContainerHome {
+  width: 80%;
+}
+
+.myName, a {
   display: inline-flex;
   text-align: center;
   font-size: 2rem;
   font-weight: bold;
   color: #ffffff;
+  opacity: 100%;
+    text-decoration: none;
+
+}
+.myName, a:hover,
+a:active,
+a.active {
+  opacity: 100%;
 }
 .myNameContainer {
   width: 20%;
@@ -35,21 +58,45 @@ div {
 .navbarItems {
   width: 80%;
   display: inline-flex;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
+
+.hide {
+  display: none;
+}
+
 @media all and (max-width: 1024px) {
   .navbarInnerContainer {
     justify-content: space-between;
   }
   .navbarItems {
-    visibility: collapse;
+    display: none;
   }
-  .myName{
+  .myName {
     font-size: 1.75rem;
+  }
+  .navbarInnerContainerHome {
+    justify-content: flex-end;
+    width: 90%;
+  }
+
+  .navbarHome {
+    justify-content: center;
+  }
+}
+@media all and (max-width: 768px) {
+  .navbarHome {
+    background-color: #0096c7;
   }
 }
 
 @media all and (max-width: 480px) {
-  .myName{
+  .myName {
     font-size: 1.5rem;
+  }
+  .navbarInnerContainerHome {
+    width: 90%;
   }
 }

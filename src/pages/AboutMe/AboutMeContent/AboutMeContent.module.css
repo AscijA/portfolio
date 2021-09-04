@@ -10,7 +10,7 @@
 }
 
 .home{
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
 .title {
   display: inline-flex;
@@ -34,6 +34,7 @@
     margin-top: 3rem;
   }
   .title {
+    font-size: 1.75rem;
     margin-bottom: 3rem;
   }
 }
