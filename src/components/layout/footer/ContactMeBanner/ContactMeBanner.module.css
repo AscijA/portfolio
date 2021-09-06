@@ -9,7 +9,7 @@
   justify-content: center;
 }
 .innerContainer {
-  width: 75%;
+  width: 90%;
   display: flex;
   justify-content: space-between;
   align-content: center;
@@ -17,7 +17,7 @@
 }
 .buttonContainer {
   display: inline-flex;
-  width: 10rem;
+  width: 13rem;
   height: 3rem;
 }
 .title {
@@ -37,7 +37,7 @@
 }
 .titleContainer {
   display: inline-flex;
-  width: 10rem;
+  width: 13rem;
 }
 .ideaContainer {
   display: inline-flex;

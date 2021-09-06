@@ -1,10 +1,27 @@
 div {
   height: 100%;
 }
-.navbarContainer{
+.navbarContainer {
   display: flex;
   flex-direction: column;
   width: 100%;
+}
+@keyframes navbarT {
+  from {
+    background-color: transparent;
+  }
+  to {
+    background-color: #0096c7;
+  }
+}
+
+@keyframes navbarReverse {
+  from {
+    background-color: #0096c7;
+  }
+  to {
+    background-color: transparent;
+  }
 }
 .navbar {
   position: fixed;
@@ -17,6 +34,9 @@ div {
   width: 100%;
   z-index: 10;
 }
+.navbarAnimation {
+  animation: navbarT 0.5s linear;
+}
 
 .navbarInnerContainer {
   display: inline-flex;
@@ -25,27 +45,34 @@ div {
   width: 90%;
   height: 100%;
 }
+.navbarInnerContainerAnimation {
+  transition: width 1s;
+}
 
 .navbarHome {
   background-color: transparent;
   justify-content: center;
 }
 
+.navbarHomeAnimation {
+  animation: navbarReverse 0.5s linear;
+}
 .navbarInnerContainerHome {
   width: 80%;
 }
 
-.myName, a {
+.myName,
+a {
   display: inline-flex;
   text-align: center;
   font-size: 2rem;
   font-weight: bold;
   color: #ffffff;
   opacity: 100%;
-    text-decoration: none;
-
+  text-decoration: none;
 }
-.myName, a:hover,
+.myName,
+a:hover,
 a:active,
 a.active {
   opacity: 100%;

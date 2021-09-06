@@ -16,30 +16,85 @@ const Navbar = () => {
       setShowBurger(false);
     });
   }, [history]);
-
   const [isOnTop, setisOnTop] = useState(window.scrollY <= 80);
-  const navbarClasses = !(isOnTop && current.startsWith("/home"))
-    ? {
+  useEffect(() => {
+    const navbarBehaviourHandler = () => {
+      const navbar = document.getElementsByClassName(classes.navbar)[0];
+      const navbarRect = navbar.getBoundingClientRect();
+      setisOnTop(window.scrollY <= navbarRect.height);
+    };
+    if (!current.startsWith("/home")) {
+      setNavbarClasses({
+        navbar: `${classes.navbar} ${classes.navbarAnimation}`,
+        navbarInnerContainer: `${classes.navbarInnerContainer} ${classes.navbarInnerContainerAnimation}`,
+        myNameContainer: `${classes.myNameContainer} `,
+      });
+    } else {
+      if (isOnTop) {
+        setNavbarClasses({
+          navbar: ` ${classes.navbarHomeAnimation} ${classes.navbarHome} ${classes.navbar}`,
+          navbarInnerContainer: ` ${classes.navbarInnerContainerAnimation} ${classes.navbarInnerContainerHome} ${classes.navbarInnerContainer}`,
+          myNameContainer: `${classes.myNameContainer} ${classes.hide}`,
+        });
+      } else {
+        setNavbarClasses({
+          navbar: `${classes.navbar} ${classes.navbarAnimation}`,
+          navbarInnerContainer: `${classes.navbarInnerContainer} ${classes.navbarInnerContainerAnimation}`,
+          myNameContainer: `${classes.myNameContainer} `,
+        });
+      }
+    }
+    window.addEventListener("scroll", navbarBehaviourHandler);
+  }, [current, isOnTop]);
+  useEffect(() => {
+    if (!current.startsWith("/home")) {
+      setNavbarClasses({
         navbar: classes.navbar,
         navbarInnerContainer: classes.navbarInnerContainer,
         myNameContainer: classes.myNameContainer,
+      });
+    } else {
+      if (isOnTop) {
+        setNavbarClasses({
+          navbar: `${classes.navbarHome} ${classes.navbar}`,
+          navbarInnerContainer: `${classes.navbarInnerContainerHome} ${classes.navbarInnerContainer}`,
+          myNameContainer: `${classes.myNameContainer} ${classes.hide}`,
+        });
+      } else {
+        setNavbarClasses({
+          navbar: `${classes.navbar} `,
+          navbarInnerContainer: `${classes.navbarInnerContainer}`,
+          myNameContainer: `${classes.myNameContainer} `,
+        });
       }
-    : {
-        navbar: `${classes.navbar} ${classes.navbarHome}`,
-        navbarInnerContainer: `${classes.navbarInnerContainer} ${classes.navbarInnerContainerHome}`,
-        myNameContainer: `${classes.myNameContainer} ${classes.hide}`,
+    }
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
+  let [navbarClasses, setNavbarClasses] = useState(() => {
+    if (!current.startsWith("/home")) {
+      return {
+        navbar: classes.navbar,
+        navbarInnerContainer: classes.navbarInnerContainer,
+        myNameContainer: classes.myNameContainer,
       };
+    } else {
+      if (isOnTop) {
+        return {
+          navbar: `${classes.navbarHome} ${classes.navbar}`,
+          navbarInnerContainer: `${classes.navbarInnerContainerHome} ${classes.navbarInnerContainer}`,
+          myNameContainer: `${classes.myNameContainer} ${classes.hide}`,
+        };
+      } else {
+        return {
+          navbar: `${classes.navbar} `,
+          navbarInnerContainer: `${classes.navbarInnerContainer}`,
+          myNameContainer: `${classes.myNameContainer} `,
+        };
+      }
+    }
+  });
 
-  const navbarBehaviourHandler = () => {
-    const navbar = document.getElementsByClassName(classes.navbar)[0];
-    const navbarRect = navbar.getBoundingClientRect();
-    setisOnTop(window.scrollY <= navbarRect.height);
-  };
-
-  useEffect(() => {
-    window.addEventListener("scroll", navbarBehaviourHandler);
-  }, [isOnTop]);
-
+  /** Burger menu */
   const [showBurger, setShowBurger] = useState(false);
   const onHamburgerMenuClick = () => {
     setShowBurger((prevState) => {
