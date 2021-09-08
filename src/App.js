@@ -7,7 +7,7 @@ import ContactMe from "./pages/ContactMe/ContactMe";
 import ErrorPage from "./pages/ErrorPage/ErrorPage";
 import Home from "./pages/Home/Home";
 import AboutMe from "./pages/AboutMe/AboutMe";
-import { Fragment as div } from "react";
+
 function App() {
   return (
     <section style={{display: "flex", flexDirection:"column"}}>
