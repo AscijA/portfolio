@@ -7,10 +7,10 @@ import ContactMe from "./pages/ContactMe/ContactMe";
 import ErrorPage from "./pages/ErrorPage/ErrorPage";
 import Home from "./pages/Home/Home";
 import AboutMe from "./pages/AboutMe/AboutMe";
-import { Fragment } from "react";
+import { Fragment as div } from "react";
 function App() {
   return (
-    <Fragment>
+    <section style={{display: "flex", flexDirection:"column"}}>
       <Navbar />
       <Switch>
         <Route path="/" exact>
@@ -30,7 +30,7 @@ function App() {
         </Route>
       </Switch>
       <Footer />
-    </Fragment>
+    </section>
   );
 }
 

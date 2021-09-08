@@ -8,7 +8,7 @@
   display: inline-flex;
   align-items: center;
   flex-direction: column;
-  margin-top: 5em;
+  margin-top: 5rem;
 }
 .e404Text {
   color: #0096c7;
@@ -27,7 +27,6 @@
   font-size: 2rem;
   text-align: center;
   font-weight: bold;
-  margin-bottom: 5rem;
 }
 
 @media all and (max-width: 1024px) {
