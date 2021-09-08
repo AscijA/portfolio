@@ -1,3 +1,24 @@
+.outerContainer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.outerContainer > h1 {
+  display: inline-flex;
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 4rem;
+  align-self: center;
+  justify-self: center;
+  margin-top: 5rem;
+}
+.contentOuterContainer {
+  width: 100%;
+  flex-direction: row;
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+}
 .aboutMeText {
   display: inline-flex;
   text-align: justify;
@@ -7,36 +28,19 @@
   color: #0096c7;
   font-weight: bold;
 }
-.someContainer {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-}
 .page {
   font-size: 1.25rem;
+  color: #000000;
+  font-weight: normal;
 }
 
 .home {
   font-size: 1.5rem;
 }
-.title {
-  display: inline-flex;
-  font-size: 2.5rem;
-  text-align: center;
-  margin-bottom: 6rem;
-  align-self: center;
-  justify-self: center;
-}
-.content {
-  width: 100%;
-  flex-direction: row;
-  display: inline-flex;
-  align-items: center;
-  justify-content: space-between;
-}
+
 
 @media all and (max-width: 1024px) {
-  .content {
+  .contentOuterContainer {
     flex-direction: column;
     align-items: center;
   }
@@ -44,7 +48,7 @@
     margin-left: 0;
     margin-top: 3rem;
   }
-  .title {
+  .outerContainer > h1 {
     margin-bottom: 4rem;
   }
 }
@@ -87,7 +91,7 @@
 }
 
 @media all and (max-width: 768px) {
-  .title {
+  .outerContainer > h1 {
     font-size: 1.75rem;
     margin-bottom: 3rem;
   }
@@ -104,8 +108,8 @@
   }
 }
 
-@media all and (max-width:480px){
+@media all and (max-width: 480px) {
   .contentContainer > ul > li {
     font-size: 1.25rem;
-}
+  }
 }

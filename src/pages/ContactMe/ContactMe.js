@@ -4,7 +4,7 @@ import classes from "./ContactMe.module.css";
 const ContactMe = () => {
   return(
     <section className={classes.section}>
-      <div className={classes.contactFormContainer}>
+      <div >
         <ContactForm/>
       </div>
     </section>

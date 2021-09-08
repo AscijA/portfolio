@@ -3,7 +3,7 @@ import classes from "./ErrorPage.module.css";
 const ErrorPage = () => {
   return (
     <section className={classes.section}>
-      <div className={classes.e404Cont}>
+      <div >
         <h1 className={classes.e404Text}>404</h1>
         <h1 className={classes.helperText}>Whoops... Page not found!</h1>
         <p className={classes.message}>

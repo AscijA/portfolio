@@ -3,8 +3,8 @@ import classes from "./ServiceItem.module.css";
 const ServiceItem = (props) => {
   return (
     <div className={classes.item}>
-      <div className={classes.innerContainer}>
-        <img src={props.src} alt={props.alt} className={classes.icon} />
+      <div >
+        <img src={props.src} alt={props.alt} />
         <h1 className={classes.title}>{props.alt}</h1>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam sunt

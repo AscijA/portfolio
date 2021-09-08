@@ -6,7 +6,7 @@
   margin-bottom: 3rem;
 }
 
-.innerContainer {
+.item > div {
   width: 100%;
   display: flex;
   justify-content: center;
@@ -14,18 +14,14 @@
   flex-direction: column;
 }
 
-.borderRight {
-  border-right: 1px solid #3a3a3a;
-}
-.icon {
+.item > div > img {
   height: 100px;
 }
-
-.title {
+.item > div > h1 {
   font-size: 1.75rem;
   text-align: center;
 }
-.innerContainer > p {
+.item > div > p {
   text-align: justify;
   width: 75%;
 }
@@ -37,10 +33,10 @@
 }
 
 @media all and (max-width: 480px) {
-  .icon {
+  .item > div > img {
     height: 75px;
   }
-  .title {
+  .item > div > h1 {
     font-size: 1.5rem;
     text-align: center;
   }

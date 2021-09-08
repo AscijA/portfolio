@@ -46,7 +46,7 @@ const TypingText = () => {
 
   return (
     <div className={classes.textContainer}>
-      <div className={classes.innerContainer}>
+      <div>
         <p className={classes.hi}>Hi, my name is:</p>
         <p className={classes.names}>{showFirst}</p>
         <p className={classes.names}>{showLast}</p>

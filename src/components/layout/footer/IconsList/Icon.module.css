@@ -1,13 +1,13 @@
-.iconItem {
+.iconCont {
+  display: inline-block;
+  margin: 0.5rem;
+}
+.iconCont > img {
   height: 80%;
   width: 80%;
   display: flex;
   align-self: center;
 }
-.iconItem:hover  {
+.iconCont > img:hover {
   cursor: pointer;
-}
-.iconCont {
-  display: inline-block;
-  margin: 0.5rem;
 }

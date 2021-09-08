@@ -8,6 +8,7 @@
   display: flex;
   justify-content: center;
 }
+
 .innerContainer {
   width: 90%;
   display: flex;
@@ -15,19 +16,23 @@
   align-content: center;
   align-items: center;
 }
-.buttonContainer {
+
+.titleContainer {
   display: inline-flex;
   width: 13rem;
-  height: 3rem;
 }
-.title {
+.titleContainer > p {
   font-size: 1.5rem;
   font-weight: bold;
   text-align: center;
   margin: 0;
   width: 100%;
 }
-.ideaText {
+
+.ideaContainer {
+  display: inline-flex;
+}
+.ideaContainer > p {
   font-size: 1.2rem;
   text-align: center;
   font-weight: 200;
@@ -35,40 +40,45 @@
   height: 100%;
   align-self: center;
 }
-.titleContainer {
+
+.buttonContainer {
   display: inline-flex;
   width: 13rem;
-}
-.ideaContainer {
-  display: inline-flex;
+  height: 3rem;
 }
 
 @media all and (max-width: 1024px) {
-  .ideaContainer{
-    display: none;
-  }
-  .innerContainer{
+  .innerContainer {
     justify-content: space-around;
   }
+
   .titleContainer {
     width: auto;
   }
+
+  .ideaContainer {
+    display: none;
+  }
+
   .buttonContainer {
     width: 10rem;
   }
 }
 @media all and (max-width: 768px) {
-  .titleContainer {
-    display: none;
+  .outerContainer {
+    background-color: transparent;
   }
-  .buttonContainer {
-    width: 70%;
-  }
+
   .innerContainer {
     justify-content: center;
   }
-  .outerContainer {
-    background-color: transparent;
+
+  .titleContainer {
+    display: none;
+  }
+  
+  .buttonContainer {
+    width: 70%;
   }
 }
 @media all and (max-width: 480px) {

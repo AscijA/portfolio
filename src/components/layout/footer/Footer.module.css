@@ -1,6 +1,4 @@
-div{
-  height: auto;
-}
+
 .outerContainer{
   width: 100%;
   display: flex;
@@ -25,11 +23,12 @@ div{
   align-content: center;
   flex-direction: column;
 }
-.innerContainer {
+.container > div {
   display: inline-flex;
   align-items: center;
 }
-.madeWith {
+
+.container > div > p {
   font-family: "Poppins";
   font-size: 1rem;
   color: #ffffff;

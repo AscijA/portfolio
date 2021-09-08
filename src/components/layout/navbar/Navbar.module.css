@@ -1,10 +1,21 @@
-div {
-  height: 100%;
+.navbar {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 5rem;
+  background-color: #0096c7;
+  vertical-align: middle;
+  width: 100%;
+  z-index: 10;
 }
+
 .navbarContainer {
   display: flex;
   flex-direction: column;
   width: 100%;
+  justify-content: center;
+  align-items: center;
 }
 @keyframes navbarT {
   from {
@@ -23,17 +34,7 @@ div {
     background-color: transparent;
   }
 }
-.navbar {
-  position: fixed;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 5rem;
-  background-color: #0096c7;
-  vertical-align: middle;
-  width: 100%;
-  z-index: 10;
-}
+
 .navbarAnimation {
   animation: navbarT 0.5s linear;
 }

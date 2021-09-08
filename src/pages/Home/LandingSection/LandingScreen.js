@@ -5,7 +5,7 @@ import TypingText from "./TypingText/TypingText";
 const LandingSection = () => {
   return (
     <div className={classes.codeImage}>
-      <div className={classes.content}>
+      <div>
         <TypingText />
       </div>
     </div>

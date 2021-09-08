@@ -3,7 +3,7 @@
   display: flex;
   justify-content: center;
 }
-.e404Cont {
+.section > div {
   width: 75%;
   display: inline-flex;
   align-items: center;
@@ -15,6 +15,7 @@
   font-size: 12.5rem;
   font-weight: bold;
   margin: 0;
+  margin-top: 2rem;
 }
 .helperText {
   font-size: 4.5rem;
@@ -22,7 +23,7 @@
   margin: 0;
   margin-bottom: 3rem;
 }
-.message{
+.section > div > p{
   font-size: 2rem;
   text-align: center;
   font-weight: bold;
@@ -36,7 +37,7 @@
   .helperText{
     font-size: 3rem;
   }
-  .message{
+  .section > div > p{
     font-size: 1.5rem;
   }
 }
@@ -48,7 +49,7 @@
   .helperText{
     font-size: 2rem;
   }
-  .message{
+  .section > div > p{
     font-size: 1rem;
   }
 }

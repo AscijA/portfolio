@@ -6,7 +6,7 @@
   flex-direction: column;
   margin-top: 5rem;
 }
-.innerContainer {
+.textContainer > div {
   width: 20rem;
   height: 22rem;
 }
@@ -31,7 +31,7 @@
 }
 
 @media all and (max-width: 768px) {
-  .innerContainer {
+  .textContainer > div {
     width: auto;
     height: 13rem;
   }
@@ -55,7 +55,7 @@
   .names {
     font-size: 3.5rem;
   }
-  .innerContainer {
+  .textContainer > div {
     width: auto;
     height: 13rem;
   }

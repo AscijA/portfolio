@@ -13,11 +13,11 @@ const Footer = () => {
       </div>
 
       <div className={classes.container}>
-        <div className={classes.innerContainer}>
+        <div>
           <IconsList />
         </div>
-        <div className={classes.innerContainer}>
-          <p className={classes.madeWith}>Created with</p>
+        <div>
+          <p>Created with</p>
           <Icon iconPath={react} />
         </div>
       </div>

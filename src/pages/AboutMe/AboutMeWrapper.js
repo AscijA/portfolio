@@ -3,7 +3,7 @@ import classes from "./AboutMeWrapper.module.css";
 const AboutMeWrapper = (props) => {
   return (
     <section className={classes.section}>
-      <div className={classes.innerContainer}>
+      <div >
         {props.children}
       </div>
     </section>

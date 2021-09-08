@@ -53,10 +53,10 @@ const AboutMeContent = (props) => {
     );
   }
   return (
-    <div className={classes.someContainer}>
-      <h1 className={classes.title}>About Me</h1>
+    <div className={classes.outerContainer}>
+      <h1 >About Me</h1>
 
-      <div className={classes.content}>
+      <div className={classes.contentOuterContainer}>
         <ImageContainer />
         {content}
       </div>

@@ -7,14 +7,14 @@ const ContactForm = () => {
   }
   return (
     <form className={classes.formContainer} onSubmit={onSendHandler}>
-        <h1 className={classes.title}>Contact Me</h1>
+      <h1>Contact Me</h1>
       <div className={classes.inputContainer}>
-        <Input label="Name" type="text"/>
-        <Input label="E-mail" type="email"/>
+        <Input label="Name" type="text" />
+        <Input label="E-mail" type="email" />
       </div>
       <div className={classes.message}>
         <label>Your message</label>
-        <input type="text" className={classes.messageInput} />
+        <input type="text" />
       </div>
       <div className={classes.buttonCont}>
         <Button label="SEND" buttonType="1" bigButton={true} />

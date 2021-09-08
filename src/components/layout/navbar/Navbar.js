@@ -108,7 +108,7 @@ const Navbar = () => {
         <div className={navbarClasses.navbarInnerContainer}>
           <div className={navbarClasses.myNameContainer}>
             <NavLink to="/home" activeClassName={classes.myName}>
-              <p className={classes.myName}>Maid_</p>
+              <p >Maid_</p>
             </NavLink>
           </div>
           <div className={classes.navbarItems}>
