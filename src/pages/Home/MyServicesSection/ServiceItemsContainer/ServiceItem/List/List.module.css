@@ -1,0 +1,32 @@
+.container {
+  width: 75%;
+  text-align: center;
+}
+.container > li {
+  color: #3a3a3a;
+  font-size: 1.25rem;
+}
+
+.container > ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.container > h3 {
+  color: #0096c7;
+  font-size: 1.25rem;
+}
+
+@media all and (max-width: 480px) {
+  .container > h3 {
+    font-size: 1rem;
+    margin: 0;
+  }
+  .container > li {
+    font-size: 1rem;
+  }
+  .container > ul {
+    margin-top: 0
+  }
+  
+}

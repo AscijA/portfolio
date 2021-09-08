@@ -2,14 +2,21 @@
   display: inline-flex;
   text-align: justify;
   margin-left: 6rem;
-  margin-top: -1rem;
+  /* margin-top: -2rem; */
+  line-height: 1.5rem;
+  color: #0096c7;
+  font-weight: bold;
 }
-
+.someContainer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
 .page {
   font-size: 1.25rem;
 }
 
-.home{
+.home {
   font-size: 1.5rem;
 }
 .title {
@@ -17,11 +24,15 @@
   font-size: 2.5rem;
   text-align: center;
   margin-bottom: 6rem;
+  align-self: center;
+  justify-self: center;
 }
 .content {
+  width: 100%;
   flex-direction: row;
   display: inline-flex;
-  align-items: flex-start;
+  align-items: center;
+  justify-content: space-between;
 }
 
 @media all and (max-width: 1024px) {
@@ -34,7 +45,67 @@
     margin-top: 3rem;
   }
   .title {
+    margin-bottom: 4rem;
+  }
+}
+.contentContainer > ul {
+  list-style: none;
+  padding: 0;
+  margin-left: 6rem;
+  margin-top: 0;
+}
+
+.contentContainer > ul > li {
+  margin-bottom: 1rem;
+}
+.contentContainer.special > ul > li,
+.special > p {
+  text-align: right;
+}
+.contentContainer {
+  display: flex;
+  flex-direction: column;
+}
+.contentContainer.special {
+  align-items: flex-end;
+}
+
+.igotlost {
+  display: flex;
+}
+.special > ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  margin-left: 0;
+}
+
+@media all and (max-width: 1024px) {
+  .contentContainer > ul {
+    margin-left: 0;
+  }
+}
+
+@media all and (max-width: 768px) {
+  .title {
     font-size: 1.75rem;
     margin-bottom: 3rem;
   }
+  .contentContainer > ul {
+    margin-left: 0;
+    text-align: center;
+  }
+  .contentContainer > .aboutMeText {
+    align-self: center;
+  }
+  .special > ul,
+  .special > p {
+    display: none;
+  }
+}
+
+@media all and (max-width:480px){
+  .contentContainer > ul > li {
+    font-size: 1.25rem;
+}
 }

@@ -1,5 +1,5 @@
 import classes from "./AboutMeContent.module.css";
-import React, { Fragment } from "react";
+import React, { Fragment as div } from "react";
 import ImageContainer from "../ImageContainer/ImageContainer";
 
 const AboutMeContent = (props) => {
@@ -24,22 +24,43 @@ const AboutMeContent = (props) => {
     );
   } else {
     content = (
-      <p className={`${classes.aboutMeText} ${classes.home}`}>
-        dolor sit amet consectetur adipisicing elit. Officiis quia
-        necessitatibus iure et est soluta dicta fugiat qui sed magnam doloremque
-        esse, quisquam culpa exercitationem a error velit fugit ex?
-      </p>
+      <div className={classes.igotlost}>
+        <div className={classes.contentContainer}>
+          <p className={`${classes.aboutMeText} ${classes.home}`}>
+            I am a:
+          </p>
+          <ul className={classes.home}>
+            <li>_Web developer_</li>
+            <li>_Discord bot creator_</li>
+            <li>_IT Student (University of Technology Graz)_</li>
+            <li>_Coffee adict_</li>
+            <li>_Football player_</li>
+          </ul>
+        </div>
+        <div className={`${classes.contentContainer} ${classes.special}`}>
+          <p className={`${classes.aboutMeText} ${classes.home}`}>
+            I like to:
+          </p>
+          <ul className={classes.home}>
+            <li>_Read Books_</li>
+            <li>_Watch movies_</li>
+            <li>_Listen to music_</li>
+            <li>_Play football_</li>
+            <li>_The most important, solve problems_</li>
+          </ul>
+        </div>
+      </div>
     );
   }
   return (
-    <Fragment>
+    <div className={classes.someContainer}>
       <h1 className={classes.title}>About Me</h1>
 
       <div className={classes.content}>
         <ImageContainer />
         {content}
       </div>
-    </Fragment>
+    </div>
   );
 };
 export default AboutMeContent;

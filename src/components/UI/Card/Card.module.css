@@ -4,4 +4,9 @@
   border-radius: 20px;
   border: 1px solid #3a3a3a;
   background-color: white;
+  display: flex;
+  justify-content: center;
+}
+.column{
+  flex-direction: column;
 }

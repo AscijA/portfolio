@@ -1,0 +1,51 @@
+.item {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
+.innerContainer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.borderRight {
+  border-right: 1px solid #3a3a3a;
+}
+.icon {
+  height: 100px;
+}
+
+.title {
+  font-size: 1.75rem;
+  text-align: center;
+}
+.innerContainer > p {
+  text-align: justify;
+  width: 75%;
+}
+@media all and (max-width: 768px) {
+  .item {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+}
+
+@media all and (max-width: 480px) {
+  .icon {
+    height: 75px;
+  }
+  .title {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+  .item {
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+}
