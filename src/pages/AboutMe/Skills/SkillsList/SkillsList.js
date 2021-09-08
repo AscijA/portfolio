@@ -1,5 +1,7 @@
 import classes from "./SkillsList.module.css";
+
 import SkillsListItem from "./SkillsListItem";
+
 const skills = [
   { name: "HTML/CSS", amount: 90 },
   { name: "JavaScript", amount: 80 },

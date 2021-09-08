@@ -1,5 +1,6 @@
-import { useEffect, useRef, useState } from "react";
 import classes from "./TypingText.module.css";
+
+import { useEffect, useRef, useState } from "react";
 
 const TypingText = () => {
   let firstName = "Maid";
@@ -25,18 +26,18 @@ const TypingText = () => {
         return prev.substring(0, prev.length - 1);
       });
     }
-      if (showFirst === firstName) {
-        const tick2 = () => {
-          setShowLast(
-            (prev) => prev.slice(0, -1) + lastName[index2.current] + "_"
-          );
-          index2.current++;
-        };
-        if (index2.current < lastName.length) {
-          let addChar2 = setInterval(tick2, 200);
-          return () => clearInterval(addChar2);
-        }
+    if (showFirst === firstName) {
+      const tick2 = () => {
+        setShowLast(
+          (prev) => prev.slice(0, -1) + lastName[index2.current] + "_"
+        );
+        index2.current++;
+      };
+      if (index2.current < lastName.length) {
+        let addChar2 = setInterval(tick2, 200);
+        return () => clearInterval(addChar2);
       }
+    }
     if (showLast === lastName + "_") {
       setShowLast((prev) => {
         return prev.substring(0, prev.length - 1);

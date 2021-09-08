@@ -1,5 +1,7 @@
 import classes from "./NavbarItem.module.css";
+
 import { NavLink } from "react-router-dom";
+
 const navItems = ["HOME", "ABOUT", "MY PROJECTS", "MY SERVICES", "CONTACT"];
 
 const NavbarItems = () => {

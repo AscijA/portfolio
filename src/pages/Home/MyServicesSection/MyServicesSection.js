@@ -1,5 +1,7 @@
-import { useState } from "react";
 import classes from "./MyServicesSection.module.css";
+
+import { useState } from "react";
+
 import arrow from "../../../assets/icons/right-arrow.png";
 import ServiceItemsContainer from "./ServiceItemsContainer/ServiceItemsContainer";
 

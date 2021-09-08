@@ -1,5 +1,6 @@
-import { Fragment } from "react";
 import classes from "./Input.module.css";
+
+import { Fragment } from "react";
 
 const Input = (props) => {
 

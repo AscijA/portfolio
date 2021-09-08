@@ -1,9 +1,11 @@
-import List from "./List/List";
 import classes from "./ServiceItem.module.css";
+
+import List from "./List/List";
+
 const ServiceItem = (props) => {
   return (
     <div className={classes.item}>
-      <div >
+      <div>
         <img src={props.src} alt={props.alt} />
         <h1 className={classes.title}>{props.alt}</h1>
         <p>

@@ -1,8 +1,10 @@
 import Card from "../../../../components/UI/Card/Card";
 import ServiceItem from "./ServiceItem/ServiceItem";
+
 import web from "../../../../assets/icons/web.png";
 import mobile from "../../../../assets/icons/mobile.png";
 import desktop from "../../../../assets/icons/desktop.png";
+
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/swiper-bundle.min.css";
 

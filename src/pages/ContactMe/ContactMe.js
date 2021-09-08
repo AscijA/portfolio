@@ -1,15 +1,15 @@
-import ContactForm from "./ContactForm";
 import classes from "./ContactMe.module.css";
 
+import ContactForm from "./ContactForm";
+
 const ContactMe = () => {
-  return(
+  return (
     <section className={classes.section}>
-      <div >
-        <ContactForm/>
+      <div>
+        <ContactForm />
       </div>
     </section>
-  )
-
+  );
 };
 
-export default ContactMe
+export default ContactMe;

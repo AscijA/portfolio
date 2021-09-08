@@ -1,4 +1,5 @@
 import classes from "./Skills.module.css"
+
 import SkillsList from "./SkillsList/SkillsList"
 
 const Skills = () => {

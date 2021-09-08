@@ -1,10 +1,12 @@
 import classes from "./Footer.module.css";
-import react from "../../../assets/icons/react.png";
+
+import { useHistory } from "react-router";
 
 import IconsList from "./IconsList/IconsList";
 import Icon from "./IconsList/Icon";
 import ContactMeBanner from "./ContactMeBanner/ContactMeBanner";
-import { useHistory } from "react-router";
+
+import react from "../../../assets/icons/react.png";
 
 const Footer = () => {
   const history = useHistory();

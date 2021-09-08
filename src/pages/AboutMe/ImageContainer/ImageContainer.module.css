@@ -1,8 +1,9 @@
-.img{
+.innerContainer{
+  display: inline-flex;
+}
+.innerContainer >img{
   width: 15rem;
   height: auto;
   box-shadow: -1rem -1rem #0096c7;
 }
-.innerContainer{
-  display: inline-flex;
-}
+

@@ -1,9 +1,11 @@
 import classes from "./AboutMeSection.module.css";
 
+import { Link } from "react-router-dom";
+
 import Button from "../../../components/UI/Button/Button";
 import AboutMeContent from "../../AboutMe/AboutMeContent/AboutMeContent";
 import AboutMeWrapper from "../../AboutMe/AboutMeWrapper";
-import { Link } from "react-router-dom";
+
 
 const AboutMeSection = (props) => {
   return (

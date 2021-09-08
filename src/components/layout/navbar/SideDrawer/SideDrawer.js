@@ -1,5 +1,6 @@
-import NavbarItems from "../navbarItem/NavbarItem";
 import classes from "./SideDrawer.module.css";
+
+import NavbarItems from "../navbarItem/NavbarItem";
 
 const SideDrawer = (props) => {
   const appliedStyling = props.showMenu

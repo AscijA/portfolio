@@ -1,8 +1,11 @@
+import classes from "./Navbar.module.css";
+
 import { Fragment, useEffect, useState } from "react";
+
 import { useHistory } from "react-router";
 import { NavLink } from "react-router-dom";
+
 import HamburgerMenu from "./HamburgerMenu";
-import classes from "./Navbar.module.css";
 import NavbarItems from "./navbarItem/NavbarItem";
 import SideDrawer from "./SideDrawer/SideDrawer";
 
@@ -68,7 +71,7 @@ const Navbar = () => {
         });
       }
     }
-  // eslint-disable-next-line react-hooks/exhaustive-deps
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
   let [navbarClasses, setNavbarClasses] = useState(() => {
     if (!current.startsWith("/home")) {
@@ -108,7 +111,7 @@ const Navbar = () => {
         <div className={navbarClasses.navbarInnerContainer}>
           <div className={navbarClasses.myNameContainer}>
             <NavLink to="/home" activeClassName={classes.myName}>
-              <p >Maid_</p>
+              <p>Maid_</p>
             </NavLink>
           </div>
           <div className={classes.navbarItems}>

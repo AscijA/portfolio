@@ -1,4 +1,5 @@
 import React from "react";
+
 import AboutMeContent from "./AboutMeContent/AboutMeContent";
 import AboutMeWrapper from "./AboutMeWrapper";
 import Skills from "./Skills/Skills";

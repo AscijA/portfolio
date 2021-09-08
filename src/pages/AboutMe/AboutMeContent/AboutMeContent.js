@@ -1,5 +1,7 @@
 import classes from "./AboutMeContent.module.css";
-import React, { Fragment as div } from "react";
+
+import React from "react";
+
 import ImageContainer from "../ImageContainer/ImageContainer";
 
 const AboutMeContent = (props) => {
