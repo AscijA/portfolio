@@ -4,14 +4,26 @@ import react from "../../../assets/icons/react.png";
 import IconsList from "./IconsList/IconsList";
 import Icon from "./IconsList/Icon";
 import ContactMeBanner from "./ContactMeBanner/ContactMeBanner";
+import { useHistory } from "react-router";
 
 const Footer = () => {
-  return (
+  const history = useHistory();
+  let banner = (
     <div className={classes.outerContainer}>
       <div className={classes.banner}>
         <ContactMeBanner />
       </div>
+    </div>
+  );
+  let outerClasses = classes.outerContainer;
+  if (history.location.pathname.startsWith("/contact")) {
+    banner = null;
+    outerClasses = `${classes.outerContainer} ${classes.narrow}`;
+  }
 
+  return (
+    <div className={outerClasses}>
+      {banner}
       <div className={classes.container}>
         <div>
           <IconsList />
