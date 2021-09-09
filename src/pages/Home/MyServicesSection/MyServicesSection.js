@@ -12,8 +12,8 @@ const MyServicesSection = (props) => {
   };
   return (
     <div className={classes.innerContainer}>
-      <div className={classes.blueContainer}>
-        <h1 className={classes.title}>MyServices</h1>
+      <div className={classes.blueContainer} id="myservices">
+        <h1 className={classes.title}>My Services</h1>
         <p className={classes.description}>
           With the knowledge and 3 years of experience I provide clean and
           minimalistic design and implementaion.

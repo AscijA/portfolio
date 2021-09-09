@@ -10,13 +10,13 @@ import AboutMe from "./pages/AboutMe/AboutMe";
 
 function App() {
   return (
-    <section style={{display: "flex", flexDirection:"column"}}>
+    <section style={{ display: "flex", flexDirection: "column" }}>
       <Navbar />
       <Switch>
         <Route path="/" exact>
           <Redirect to="/home" />
         </Route>
-        <Route path="/home/">
+        <Route path="/home" exact>
           <Home />
         </Route>
         <Route path="/about">
