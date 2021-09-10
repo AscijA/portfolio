@@ -13,7 +13,7 @@ const ServiceItem = (props) => {
           placeat
         </p>
         <List label="Technologies Used" />
-        <List label="Tools Used" />
+        {/* <List label="Tools Used" /> */}
       </div>
     </div>
   );
